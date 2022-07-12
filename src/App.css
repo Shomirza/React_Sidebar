@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.Sidebar {
+  height: 100vh;
+  box-shadow: 4px 0px 30px 0px rgba(34, 60, 80, 0.12);
+  overflow: sticky;
+}
+.ShowBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 4px 0px 30px 0px rgba(34, 60, 80, 0.12);
+  cursor: pointer;
+  margin-right: -20px;
+  z-index: 5;
+}
+.Show {
+  width: 70px;
+}
+.Sidebar.Show .ShowBtn {
+  transform: rotate(180deg);
+}
+.Sidebar.Show .nav-link{
+  justify-content: center;
+}
+.avatar {
+  border-bottom: 2px solid #dee1e6;
+}
+.avatar img {
+  width: 50px;
+  height: 50px;
+}
+.nav-links a {
+  text-decoration: none;
+}
+.nav-link {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  color: #606060;
+}
+.productItems p:hover {
+  background-color: #eaeaea;
+}
+.nav-link i {
+  font-size: 23px;
+  margin-right: 15px;
+}
+.product {
+  overflow: hidden;
+  height: 40px;
+}
+.active {
+  height: auto !important;
+}
+.actived {
+  background-color: #0090a3;
+  color: white;
+}
+.product.active .chevronUp {
+  transform: rotate(180deg);
+}
